@@ -9,56 +9,80 @@ const products = [
     price: "Mulai dari Rp 3.099.000",
     image: "/assets/xr.png",
     pro: false,
-    priceListImage: "/assets/price-list/series x.png",
+    interPriceListImage: "/assets/price-list/inter/series x.png",
+    resmiPriceListImage: "/assets/price-list/resmi/series xr.png",
   },
   {
     name: "iPhone 11",
     price: "Mulai dari Rp 3.799.000",
     image: "/assets/11.png",
     pro: false,
-    priceListImage: "/assets/price-list/series 11.png",
+    interPriceListImage: "/assets/price-list/inter/series 11.png",
+    resmiPriceListImage: "/assets/price-list/resmi/series 11.png",
   },
   {
     name: "iPhone 12",
     price: "Mulai dari Rp 4.399.000",
     image: "/assets/12.png",
     pro: false,
-    priceListImage: "/assets/price-list/series 12.png",
+    interPriceListImage: "/assets/price-list/inter/series 12.png",
+    resmiPriceListImage: "/assets/price-list/resmi/series 12.png",
   },
   {
     name: "iPhone 13",
     price: "Mulai dari Rp 5.749.000",
     image: "/assets/13.png",
     pro: false,
-    priceListImage: "/assets/price-list/series 13.png",
+    interPriceListImage: "/assets/price-list/inter/series 13.png",
+    resmiPriceListImage: "/assets/price-list/resmi/series 13.png",
   },
   {
     name: "iPhone 12 Pro",
     price: "Mulai dari Rp 5.799.000",
     image: "/assets/12-pro.png",
     pro: true,
-    priceListImage: "/assets/price-list/series 12.png",
+    interPriceListImage: "/assets/price-list/inter/series 12.png",
+    resmiPriceListImage: "/assets/price-list/resmi/series 12.png",
   },
   {
     name: "iPhone 13 Pro",
     price: "Mulai dari Rp 7.299.000",
     image: "/assets/13-pro.png",
     pro: true,
-    priceListImage: "/assets/price-list/series 13.png",
+    interPriceListImage: "/assets/price-list/inter/series 13.png",
+    resmiPriceListImage: "/assets/price-list/resmi/series 13.png",
   },
   {
     name: "iPhone 14",
     price: "Mulai dari Rp 6.499.000",
     image: "/assets/14.png",
     pro: false,
-    priceListImage: "/assets/price-list/series 14.png",
+    interPriceListImage: "/assets/price-list/inter/series 14.png",
+    resmiPriceListImage: "/assets/price-list/resmi/series 14.png",
   },
   {
     name: "iPhone 15",
-    price: "Mulai dari Rp 12.xxx.xxx",
+    price: "Mulai dari Rp 9.249.000",
     image: "/assets/15.png",
     pro: false,
-    priceListImage: null,
+    interPriceListImage: null,
+    resmiPriceListImage: "/assets/price-list/resmi/series 15.png",
+  },
+  {
+    name: "iPhone 16",
+    price: "Mulai dari Rp 14.499.000",
+    image: "/assets/16.png",
+    pro: false,
+    interPriceListImage: null,
+    resmiPriceListImage: "/assets/price-list/resmi/series 16.png",
+  },
+  {
+    name: "iPhone 16 Pro",
+    price: "Mulai dari Rp 15.799.000",
+    image: "/assets/16-pro.png",
+    pro: true,
+    interPriceListImage: null,
+    resmiPriceListImage: "/assets/price-list/resmi/series 16.png",
   },
 ];
 
@@ -67,9 +91,13 @@ type Product = (typeof products)[number];
 export default function ProductGrid() {
   const [filter, setFilter] = useState<'all' | 'pro' | 'basic'>('all');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [priceTab, setPriceTab] = useState<'inter' | 'resmi'>('resmi');
 
   const openModal = (product: Product) => {
-    if (product.priceListImage) setSelectedProduct(product);
+    if (product.interPriceListImage || product.resmiPriceListImage) {
+      setSelectedProduct(product);
+      setPriceTab(product.resmiPriceListImage ? 'resmi' : 'inter');
+    }
   };
 
   const closeModal = () => setSelectedProduct(null);
@@ -155,7 +183,7 @@ export default function ProductGrid() {
                 <p className="text-xs text-on-surface-variant mb-2">
                   {product.price}
                 </p>
-                {product.priceListImage && (
+                {(product.interPriceListImage || product.resmiPriceListImage) && (
                   <button
                     type="button"
                     onClick={() => openModal(product)}
@@ -200,10 +228,40 @@ export default function ProductGrid() {
                   ×
                 </button>
               </div>
-              <div className="overflow-y-auto">
+              {selectedProduct.interPriceListImage && selectedProduct.resmiPriceListImage && (
+                <div className="flex px-6 pt-4 gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setPriceTab('resmi')}
+                    className={`flex-1 py-2 rounded-full text-sm font-semibold transition-all ${
+                      priceTab === 'resmi'
+                        ? 'bg-primary text-white'
+                        : 'bg-apple-gray text-on-surface-variant hover:bg-secondary-container/30'
+                    }`}
+                  >
+                    Second Resmi
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setPriceTab('inter')}
+                    className={`flex-1 py-2 rounded-full text-sm font-semibold transition-all ${
+                      priceTab === 'inter'
+                        ? 'bg-primary text-white'
+                        : 'bg-apple-gray text-on-surface-variant hover:bg-secondary-container/30'
+                    }`}
+                  >
+                    Inter
+                  </button>
+                </div>
+              )}
+              <div className="overflow-y-auto mt-4">
                 <div className="relative w-full">
                   <Image
-                    src={selectedProduct.priceListImage!}
+                    src={
+                      priceTab === 'inter'
+                        ? selectedProduct.interPriceListImage!
+                        : selectedProduct.resmiPriceListImage!
+                    }
                     alt={`Price list ${selectedProduct.name}`}
                     width={760}
                     height={1080}

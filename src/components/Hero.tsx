@@ -11,7 +11,7 @@ export default function Hero() {
               auto_awesome
             </span>
             <span className="text-sm font-bold">
-              Trusted iPhone store tanpa drama di Kota Bandung
+              iPhone store terpecaya tanpa drama di Kota Bandung
             </span>
           </div>
           <h1 className="text-[40px] md:text-[64px] font-semibold text-on-surface leading-tight tracking-tight">

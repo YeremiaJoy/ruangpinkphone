@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ruangpinkphone | Gadget Impian",
+  title: "ruangpinkphone | iPhone Original Bandung, Styling dan Terpercaya.",
   description:
     "Toko iPhone terpercaya di Bandung. Kredit tanpa DP, bunga 0%, tukar tambah, dan berbagai pilihan iPhone terbaru dengan kualitas terbaik.",
 };

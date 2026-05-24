@@ -22,7 +22,7 @@ const platforms: {
   },
   {
     name: "Instagram",
-    desc: "Katalog Gemas Harian",
+    desc: "Update Stok & Promo Harian",
     action: "Lihat",
     bgColor: "bg-pink-50",
     iconColor: "#E1306C",
@@ -31,7 +31,7 @@ const platforms: {
   },
   {
     name: "TikTok",
-    desc: "Review Video Kondisi",
+    desc: "Konten Unboxing & Review Jujur",
     action: "Tonton",
     bgColor: "bg-black/5",
     iconColor: "#010101",
@@ -40,7 +40,7 @@ const platforms: {
   },
   {
     name: "Shopee",
-    desc: "Belanja Aman Se-Indonesia",
+    desc: "Belanja Aman & Terpercaya",
     action: "Beli",
     bgColor: "bg-[#ee4d2d]/10",
     iconColor: "#EE4D2D",
