@@ -166,7 +166,7 @@ export default function ProductGrid() {
                 )}
               </div>
               <a
-                href="https://wa.me/628211501621"
+                href={`https://wa.me/628211501621?text=Halo%20Ruang%20PinkPhone%2C%20saya%20ingin%20bertanya%20tentang%20${product.name}.%20Terima%20kasih!`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full inline-block text-center py-4 bg-surface-pink text-primary rounded-2xl text-sm font-bold group-hover:bg-primary group-hover:text-white transition-all"
@@ -214,7 +214,7 @@ export default function ProductGrid() {
               </div>
               <div className="px-6 py-4 border-t border-secondary-container/10">
                 <a
-                  href="https://wa.me/628211501621"
+                  href={`https://wa.me/628211501621?text=Halo%20Ruang%20PinkPhone%2C%20saya%20ingin%20bertanya%20tentang%20${selectedProduct.name}.%20Terima%20kasih!`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center py-4 bg-primary text-white rounded-2xl text-sm font-bold hover:opacity-90 transition-opacity"
@@ -241,7 +241,7 @@ export default function ProductGrid() {
                 hingga jutaan rupiah. Proses cepat, harga transparan.
               </p>
               <a
-                href="https://wa.me/628211501621"
+                href="https://wa.me/628211501621?text=Halo%20Ruang%20PinkPhone%2C%20saya%20ingin%20bertanya%20tentang%20program%20tukar%20tambah.%20Terima%20kasih!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center md:inline-block px-12 py-4 md:py-5 bg-primary text-white rounded-full text-sm font-bold shadow-xl shadow-primary/30 hover:scale-105 transition-transform"

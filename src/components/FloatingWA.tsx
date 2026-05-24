@@ -4,7 +4,7 @@ export default function FloatingWA() {
   return (
     <a
       className="fixed bottom-10 right-10 w-15 h-15 bg-[#fff] text-white rounded-full flex items-center justify-center shadow-2xl z-40 hover:scale-110 active:scale-95 transition-all group"
-      href="https://wa.me/628211501621"
+      href="https://wa.me/628211501621?text=Halo%20Ruang%20PinkPhone%2C%20saya%20ingin%20bertanya%20tentang%20produk%20dan%20promo%20terbaru.%20Terima%20kasih!"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat via WhatsApp"

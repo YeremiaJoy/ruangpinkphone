@@ -18,7 +18,7 @@ const platforms: {
     bgColor: "bg-[#25D366]/10",
     iconColor: "#25D366",
     Icon: FaWhatsapp,
-    href: "https://wa.me/628211501621",
+    href: "https://wa.me/628211501621?text=Halo%20Ruang%20PinkPhone%2C%20saya%20ingin%20bertanya%20tentang%20produk%20dan%20promo%20terbaru.%20Terima%20kasih!",
   },
   {
     name: "Instagram",
