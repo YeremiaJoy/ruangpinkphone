@@ -56,7 +56,7 @@ export default function Location() {
               </div>
             </div>
             <a
-              href="https://maps.google.com"
+              href="https://www.google.com/maps/dir//Jl.+Kautamaan+Istri+Jl.+Dewi+Sartika+No.31,+Balonggede,+Kec.+Regol,+Kota+Bandung,+Jawa+Barat+40238/@-6.924095,107.6038046,17z/data=!4m17!1m8!3m7!1s0x2e68e626894b85dd:0x6a865f4c15060dad!2sJl.+Kautamaan+Istri+Jl.+Dewi+Sartika+No.31,+Balonggede,+Kec.+Regol,+Kota+Bandung,+Jawa+Barat+40238!3b1!8m2!3d-6.9241003!4d107.6063795!16s%2Fg%2F11xcfx_p4y!4m7!1m0!1m5!1m1!1s0x2e68e626894b85dd:0x6a865f4c15060dad!2m2!1d107.6063795!2d-6.9241003?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex px-6 py-3 md:px-10 md:py-5 bg-primary text-white rounded-full text-sm font-bold shadow-lg shadow-primary/20 items-center gap-2 md:gap-4 hover:scale-105 transition-transform"
