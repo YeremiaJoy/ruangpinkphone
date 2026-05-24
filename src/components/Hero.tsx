@@ -10,8 +10,8 @@ export default function Hero() {
             <span className="material-symbols-outlined text-[20px]">
               auto_awesome
             </span>
-            <span className="text-sm font-bold">
-              iPhone store terpecaya tanpa drama di Kota Bandung
+            <span className="text-sm font-bold uppercase">
+              Trusted iPhone tanpa drama di Kota Bandung
             </span>
           </div>
           <h1 className="text-[40px] md:text-[64px] font-semibold text-on-surface leading-tight tracking-tight">
@@ -26,7 +26,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-6 pt-4">
             <a
               href="#products"
-              className="px-6 py-3 md:px-10 md:py-5 bg-primary text-white rounded-full text-xs md:text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all"
+              className="px-6 py-3 bg-primary text-white rounded-full text-xs md:text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all"
             >
               Cek Katalog
             </a>
@@ -34,7 +34,7 @@ export default function Hero() {
               href="https://wa.me/628211501621?text=Halo%20Ruang%20PinkPhone%2C%20saya%20ingin%20bertanya%20tentang%20produk%20dan%20promo%20terbaru.%20Terima%20kasih!"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 md:px-10 md:py-5 bg-white border-2 border-primary-container text-primary rounded-full text-xs md:text-sm font-bold hover:bg-primary-container/20 transition-all flex items-center gap-2"
+              className="px-6 py-3 bg-white border-2 border-primary-container text-primary rounded-full text-xs md:text-sm font-bold hover:bg-primary-container/20 transition-all flex items-center gap-2"
             >
               Konsultasi WA
             </a>
