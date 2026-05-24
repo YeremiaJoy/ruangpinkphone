@@ -45,7 +45,7 @@ const platforms: {
     bgColor: "bg-[#ee4d2d]/10",
     iconColor: "#EE4D2D",
     Icon: SiShopee,
-    href: "https://shopee.co.id/ruanggadgetbdg",
+    href: "https://shopee.co.id/ruangadget.bdg",
   },
 ];
 

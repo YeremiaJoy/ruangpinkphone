@@ -26,7 +26,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-6 pt-4">
             <a
               href="#products"
-              className="px-10 py-5 bg-primary text-white rounded-full text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all"
+              className="px-6 py-3 md:px-10 md:py-5 bg-primary text-white rounded-full text-xs md:text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all"
             >
               Cek Katalog
             </a>
@@ -34,7 +34,7 @@ export default function Hero() {
               href="https://wa.me/628211501621"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-5 bg-white border-2 border-primary-container text-primary rounded-full text-sm font-bold hover:bg-primary-container/20 transition-all flex items-center gap-2"
+              className="px-6 py-3 md:px-10 md:py-5 bg-white border-2 border-primary-container text-primary rounded-full text-xs md:text-sm font-bold hover:bg-primary-container/20 transition-all flex items-center gap-2"
             >
               Konsultasi WA
             </a>

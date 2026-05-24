@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="bg-surface-container-low pt-24 pb-12">
       <div className="container mx-auto px-4 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div className="space-y-6">
             <span className="text-[28px] text-primary font-bold">
               Ruang PinkPhone
@@ -12,7 +12,7 @@ export default function Footer() {
               pelayanan terbaik sejak 2025. Gadget Impian.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-12">
+          <div className="grid grid-cols-2 gap-12">
             <div>
               <h4 className="font-bold text-[18px] mb-6">Navigasi</h4>
               <ul className="space-y-4 text-on-surface-variant text-xs">
